@@ -21,7 +21,6 @@ app.get('/:tipo/:img', (req, res, next) => {
         var pathImagem = `./assets/no-img.jpg`;     // verificando se a imagem existe
     }       
         res.sendFile(path.resolve(pathImagem));
-    
 
 });
 

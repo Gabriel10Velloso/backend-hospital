@@ -28,7 +28,7 @@ app.use('/uploads', serveIndex(__dirname + '/uploads'));
 
 
 // Mongo cconection
-const uri = 'mongodb://gabriel:gabriel@clusterspider1-shard-00-00-x0ls9.mongodb.net:27017,clusterspider1-shard-00-01-x0ls9.mongodb.net:27017,clusterspider1-shard-00-02-x0ls9.mongodb.net:27017/hospitalDB?ssl=true&replicaSet=ClusterSpider1-shard-0&authSource=admin&retryWrites=true'
+const uri = 'mongodb://gabriel:vamo_que_vamo@clusterspider1-shard-00-00-x0ls9.mongodb.net:27017,clusterspider1-shard-00-01-x0ls9.mongodb.net:27017,clusterspider1-shard-00-02-x0ls9.mongodb.net:27017/hospitalDB?ssl=true&replicaSet=ClusterSpider1-shard-0&authSource=admin&retryWrites=true'
 
 mongoose.connect(uri, { useNewUrlParser: true }, (err, res) => {
  
@@ -54,8 +54,8 @@ mongoose.connect(uri, { useNewUrlParser: true }, (err, res) => {
 app.use('/usuario', usuarioRoutes);
 app.use('/hospital', hospitalRoutes);
 app.use('/medico', medicoRoutes);
+app.use('/login', loginRoutes);
 app.use('/buscar', buscarRoutes);
-app.use('/upload', uploadRoutes);
 app.use('/upload', uploadRoutes);
 app.use('/img', imagensRoutes);
 app.use('/', appRoutes);
