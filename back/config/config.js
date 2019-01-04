@@ -1,5 +1,5 @@
-module.exports.SEED = 'este-es-un-seed-dificil';
+module.exports.SEED = 'estexificil';
 
 
 // Google
-module.exports.CLIENT_ID = 'rcontent.com'
+module.exports.GOOGLE_CLIENT_ID = '2xu.apps.googleusercontent.com'
